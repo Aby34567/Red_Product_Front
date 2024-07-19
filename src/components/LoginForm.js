@@ -1,4 +1,3 @@
-// import Victor from './Victor.png'
 
 // export const Connexion = () => {
 //   const [email, setEmail] = useState('');
