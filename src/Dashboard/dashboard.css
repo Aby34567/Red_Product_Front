@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+    /* Styles pour les écrans de moins de 768px */
+    .container {
+      width: 100%;
+    }
+}

@@ -109,6 +109,7 @@ const LoginForm = () => {
         },
         body: JSON.stringify({ name, email, password }),
         credentials: 'include' // Si vous avez besoin de gérer les cookies
+        
       });
   
       if (response.ok) {
@@ -129,14 +130,15 @@ const LoginForm = () => {
 
   return (
     <div>
-      <div className="mt-20 text-center">
+      <div className="mt-20 flex items-center justify-center gap-2 px-1 mx-auto w-[40%]  max-lg:w-[60%] max-md:w-[80%]">
+        <img alt='' src={Victor} className=' w-3 ' />
+
         <h1 className='font-bold '>
-          <img alt='' src={Victor} className='text-align-center w-3 absolute left-1/3 ' />
           RED PRODUCT
         </h1>
       </div>
-      <div className='bg-white pb-8 w-50 text-align: left;' id='block'>
-        <div className="mt-10 text-align: left;">
+      <div className='bg-white pb-2 w-50 text-align: left;' id='block'>
+        <div className=" text-align: left;">
           <div className="mt-5 text-align: left; ml-2.5">
             <div className="">
               <div className="">
@@ -170,7 +172,7 @@ const LoginForm = () => {
                       </label>
                     </div>
                   </div>
-                  <div className="mt-2 border bg-black 500 text-center ml-10 mr-10 h-8">
+                  <div className="mt-2 border bg-black 500 text-center ml-10  w-[80%] h-8">
                     <button type="submit" className="text-white">
                       Se connecter
                     </button>

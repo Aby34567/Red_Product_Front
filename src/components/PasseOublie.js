@@ -5,11 +5,11 @@ export const PasseOublie = () => {
   return (
    
     <div>
-        <div className="mt-20 text-center ">
-        
-            <h1 className='font-bold '><img alt='' src={vactor} className=' text-align-center w-3 absolute  left-1/3 '></img>RED PRODUCT</h1>
+        <div className=" mt-20 flex items-center justify-center gap-2 px-1 mx-auto w-[40%]  max-lg:w-[60%] max-md:w-[80%] ">
+        <img alt='' src={vactor} className='  w-3  '></img>
+            <h1 className='font-bold '>RED PRODUCT</h1>
         </div>
-        <div className='bg-white  pb-8 w-50  text-align: left;' id='block'>  
+        <div className='bg-white  pb-2 w-50  text-align: left  ' id='block'>  
             <div className="mt-10 text-align: left;">
                 
                 <div className="mt-5 text-align: left; ml-2.5">

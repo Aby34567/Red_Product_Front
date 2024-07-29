@@ -33,12 +33,12 @@ const Connexion = () => {
   };
 
   return (
-    <div>
-      <div className="mt-20 flex items-center gap-2 px-1">
-        <img alt="" src={vector} className="w-3" />
+    <div className=" mt-20  gap-2 px-1  mx-auto w-[40%]  max-lg:w-[60%] max-md:w-[80%]">
+      <div className=" flex justify-center items-center gap-2 px-1  w-full">
+        <img alt="" src={vector} className="w-3 " />
         <h1 className="font-bold">RED PRODUCT</h1>
       </div>
-      <div className="bg-white pb-8 w-50 text-align: left;" id="block">
+      <div className="bg-white pb-2 mx-auto  " >
         <div className="mt-10 text-align: left;">
           <div className="mt-5 text-align: left; ml-2.5">
             <div>
@@ -77,7 +77,7 @@ const Connexion = () => {
                       </label>
                     </div>
                   </div>
-                  <div className="mt-3 border bg-black 500 text-center ml-10 mr-10 h-8">
+                  <div className="mt-3 border bg-black 500 text-center ml-10 w-[80%] h-8">
                     <button type="submit" className="text-white">
                       Se connecter
                     </button>

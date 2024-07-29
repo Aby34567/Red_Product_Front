@@ -3,6 +3,12 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@media (max-width: 768px) {
+  /* Styles pour les écrans de moins de 768px */
+  .container {
+    width: 100%;
+  }
+}
 
 body {
   margin: 0;
@@ -15,13 +21,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-table{
-  @apply py-3 px-2.5 text-sm text-left border-y border-gray-200;
-}
-th,
-td {
-  @apply bg-neutral-100;
-}
-th{
-  @apply font-semibold;
-}
+
