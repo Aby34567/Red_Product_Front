@@ -4,8 +4,10 @@ import vactor from './vactor.png';
 export const PasseOublie = () => {
   return (
    
-    <div>
-        <div className=" mt-20 flex items-center justify-center gap-2 px-1 mx-auto w-[40%]  max-lg:w-[60%] max-md:w-[80%] ">
+    <div className='bgColor'>
+
+    <div >
+        <div className=" pt-20 flex items-center justify-center gap-2 px-1 mx-auto w-[40%]  max-lg:w-[60%] max-md:w-[80%] ">
         <img alt='' src={vactor} className='  w-3  '></img>
             <h1 className='font-bold '>RED PRODUCT</h1>
         </div>
@@ -51,6 +53,7 @@ export const PasseOublie = () => {
        
 
         <p className='text-center text-white'>Revenir à la <a href='/' className='text-yellow-300'>connexion</a></p>
+    </div>
     </div>
 
     

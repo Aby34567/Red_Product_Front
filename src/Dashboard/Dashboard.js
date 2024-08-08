@@ -3,20 +3,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
 import { faP } from '@fortawesome/free-solid-svg-icons';
 import { faUserGroup } from '@fortawesome/free-solid-svg-icons';
-import { Sidebar } from '../Sidebar/Sidebar';
-import { Navbar } from './Navbar';
+
 
 export const Dashboard = () => {
   return (
 
   
-    <div className='dashboard'>
-      <div className="flex bg-gray-100 ">
-        <Sidebar />
-        <div className=" flex-col w-full px-2 md:px-4 lg:px-8">
-          <Navbar 
-          />
-          <div>
+    <div className='dashboard '>
+
+      <div className="flex  ">
+
+        <div className=" flex-col w-full h-[100%] ">
+         
+       
+          <div className=' dashboard h-[100%]'>
             <div className="text-black mb-1 bg-white h-16 pl-5">
               <h1 className='font-light text-2xl text-black'>Bienvenue sur RED Product</h1>
               <p className='text-slate-500 text-xs font-light'>lorem ipsum dolor amet consecteur</p>

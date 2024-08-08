@@ -129,15 +129,16 @@ const LoginForm = () => {
 
 
   return (
-    <div>
-      <div className="mt-20 flex items-center justify-center gap-2 px-1 mx-auto w-[40%]  max-lg:w-[60%] max-md:w-[80%]">
+    <div className='bgColor'>
+    <div className='container '>
+      <div className="pt-20 flex items-center justify-center gap-2 px-1 mx-auto w-[40%]  max-lg:w-[60%] max-md:w-[80%]">
         <img alt='' src={Victor} className=' w-3 ' />
 
         <h1 className='font-bold '>
           RED PRODUCT
         </h1>
       </div>
-      <div className='bg-white pb-2 w-50 text-align: left;' id='block'>
+      <div className='bg-white pb-2  mt-[56] text-align: left;' id='block'>
         <div className=" text-align: left;">
           <div className="mt-5 text-align: left; ml-2.5">
             <div className="">
@@ -174,7 +175,7 @@ const LoginForm = () => {
                   </div>
                   <div className="mt-2 border bg-black 500 text-center ml-10  w-[80%] h-8">
                     <button type="submit" className="text-white">
-                      Se connecter
+                      S'inscrire
                     </button>
                   </div>
                 </form>
@@ -189,6 +190,7 @@ const LoginForm = () => {
       <p className='text-center text-white'>
         Vous n'avez pas de compte? <a href="LoginForm" className='text-yellow-300'>S'inscrire</a>
       </p>
+    </div>
     </div>
   );
 }

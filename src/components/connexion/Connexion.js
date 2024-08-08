@@ -25,15 +25,17 @@ const Connexion = () => {
       }
 
       const result = await response.json();
-      console.log(result);
-      navigate('/dashboard'); // Redirection après connexion réussie
+      localStorage.setItem("users", result.name)
+      console.log(result)
+      navigate('/template/dashboard'); // Redirection après connexion réussie
     } catch (error) {
       console.error('Error logging in:', error);
     }
   };
 
   return (
-    <div className=" mt-20  gap-2 px-1  mx-auto w-[40%]  max-lg:w-[60%] max-md:w-[80%]">
+    <div className='bgColor'>
+      <div className=" pt-20  gap-2 px-1  mx-auto w-[40%]  max-lg:w-[60%] max-md:w-[80%]">
       <div className=" flex justify-center items-center gap-2 px-1  w-full">
         <img alt="" src={vector} className="w-3 " />
         <h1 className="font-bold">RED PRODUCT</h1>
@@ -94,6 +96,7 @@ const Connexion = () => {
       <p className="text-center text-white">
         Vous n'avez pas de compte? <a href="/LoginForm" className="text-yellow-300">S'inscrire</a>
       </p>
+    </div>
     </div>
   );
 };

@@ -64,13 +64,15 @@ const AddHotelForm = ({ onHotelAdded }) => {
 
   return (
     <div>
-      <FontAwesomeIcon icon={faPlus} />
-      <button onClick={handleOpen} className="mr-4 mb-2">Créer un nouveau hôtel</button>
+      <button onClick={handleOpen} className=" max-md:text-[10px] inline-flex gap-2 items-center justify-center">
+        <FontAwesomeIcon icon={faPlus} />
+        Créer un nouveau hôtel
+      </button>
       {isOpen && (
-        <div className="fixed inset-0 z-50 bg-gray-500 bg-opacity-70 p-4 md:p-8">
-          <div className="w-full max-w-xl mx-auto bg-white shadow-md rounded-xl">
+        <div className="fixed inset-0 z-50 bg-gray-500 bg-opacity-70 p-4 md:p-8 ">
+          <div className="w-full max-w-xl mx-auto bg-white shadow-md rounded-xl max-sm:h-[100%] overflow-y-scroll max-sm:my-0">
             <div className="flex justify-between p-4 border-b border-gray-200">
-              <h3>CREER UN NOUVEAU HÔTEL</h3>
+              <h3 className=''>CREER UN NOUVEAU HÔTEL</h3>
               <button onClick={handleClose} className="ml-auto">
                 <span>Fermer</span>
               </button>
@@ -150,7 +152,7 @@ const AddHotelForm = ({ onHotelAdded }) => {
                     onChange={(e) => setCurrency(e.target.value)}
                     required
                   >
-                    <option value="">Sélectionnez une devise</option>
+                    <option value="" className='max-sm:2/3'>Sélectionnez une devise</option>
                     <option value="XOF">F XOF</option>
                     <option value="EUR">Euro</option>
                     <option value="USD">Dollar</option>
